@@ -1,0 +1,103 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #18191a;
+  color: #e4e6eb;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Struktur kontainer umum */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Kotak login */
+.login-box {
+  background-color: #242526;
+  padding: 30px;
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Input */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #3e4042;
+  border-radius: 6px;
+  background-color: #3a3b3c;
+  color: white;
+  font-size: 16px;
+}
+
+/* Tombol submit */
+.login-box input[type="submit"] {
+  background-color: #1877f2;
+  border: none;
+  padding: 14px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #166fe5;
+}
+
+/* Tombol buat akun baru */
+.create-btn {
+  background-color: #31a24c;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #2b8e41;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left,
+  .right,
+  .login-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-box {
+    margin: 0 auto;
+  }
+
+  .login-box input,
+  .login-box input[type="submit"],
+  .create-btn {
+    width: 100%;
+  }
+}
